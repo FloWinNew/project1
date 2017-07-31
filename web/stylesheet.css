@@ -1,0 +1,210 @@
+
+
+body, html
+{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: 100%;
+    background: white;
+    font-family: "Roboto", serif;
+    font-size: 100%;
+
+    background: #3A1C71;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+.gradient_container
+{
+/*  background: #3A1C71;  /* fallback for old browsers */
+/*  background: -webkit-linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71);  /* Chrome 10-25, Safari 5.1-6 */
+/*  background: linear-gradient(to right, #FFAF7B, #D76D77, #3A1C71); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 100%;
+  min-height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.spacer
+{
+  width: 100%;
+  height: 200px;
+  visibility: hidden;
+
+}
+
+.container
+{
+  justify-content: space-around;
+/*  border-width: 2px;
+  border-color: green;
+  border-style: solid; */
+  margin: 10px;
+}
+
+.header_img
+{
+  width: 100%;
+  height: 500px;
+  background-image: url(images/header.jpg);
+  background-size: cover;
+  opacity: .5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index:
+}
+
+img
+{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.logo
+{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.navbar
+{
+  backgroud-color: none;
+  display: inline-block;
+  float: right
+}
+
+.navbar a
+{
+  font-family: "Roboto", sans-serif;
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+.navbar a:hover
+{
+    color: black;
+    background-color: white;
+}
+
+.CTA
+{
+  font-style: bold;
+  margin: auto;
+  width: 200px;
+  padding-bottom: 20px;
+  color: white;
+  font-family: "Roboto", serif;
+}
+
+.CTA a{
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: auto;
+  word-wrap: normal;
+  padding: 10px;
+  color: white;
+  font-family: "Roboto", serif;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+
+}
+
+.CTA a:hover
+{
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+.quote
+{
+  width: 50%;
+  color: white;
+  margin: auto;
+  font-size: 2em;
+  font-size: 2.5vw;
+  font-style: italic;
+  padding-top: 0px;
+  padding-bottom: 50px;
+}
+
+#article.flexbox
+{
+  align-self: center;
+  margin: 50px auto 20px auto;
+
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.home
+{
+  font-size: 2em;
+  color: black;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+.home a
+{
+  color: black;
+  margin: 10px;
+  padding: 5px;
+}
+
+#article.container
+{
+  line-height: 1.5em;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 0px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 800px;
+  height: 100%;
+  min-height: 200px;
+}
+
+#article.imgcontainer
+{
+  margin: auto;
+  min-height: 200px;
+}
+
+.imgcontainer img
+{
+  flex-shrink: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+h1
+{
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+}

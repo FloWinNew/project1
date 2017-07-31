@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <!--  <link rel="stylesheet" href="bulma-0.5.0/css/bulma.css" type="text/css"> -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</head>
+
+
+
+<body>
+<a name = "header"></a>
+<header>
+<div class = "gradient_container">
+  <div class = "container">
+    <div class = "logo">
+      <img src = "images/logo.png">
+    </div>
+    <div class = "navbar">
+      <a href="#whatwedo">WHAT WE DO</a>
+     <a href="#news">PACKAGES</a>
+     <a href="#contact">CLIENTS</a>
+    </div>
+  </div>
+
+<div class = "container">
+  <div class = "quote">
+    <i class="fa fa-quote-left" aria-hidden="true"></i>
+    Supplying best-in-class web development and digital marketing for small businesses
+  </div>
+</div>
+
+  <div class = "container">
+  <div class = "CTA">
+    <a href="">
+    Get Started
+  </a>
+  </div>
+</div>
+</div>
+</header>
+
+<article>
+  <a name = "whatwedo"></a>
+    <div id = "article" class = "flexbox">
+        <div id = "article" class = "imgcontainer">
+          <img src="images/stock1.jpg">
+        </div>
+        <div id = "article" class = "container">
+          <h1>
+            What we do
+          </h1>
+          <br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non semper justo, non aliquam tellus. Quisque tincidunt nibh vitae semper sodales. Ut non tincidunt nisi. In sit amet lectus cursus, consectetur dui in, dictum justo. Suspendisse eget risus lorem.
+          <br>
+           Vivamus eu odio ac urna finibus tincidunt sed eget quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam et sollicitudin lacus, eu venenatis lacus.
+        </div>
+    </div>
+</article>
+
+<article>
+  <a name = "whatwedo"></a>
+    <div id = "article" class = "flexbox">
+        <div id = "article" class = "container">
+          <h1>
+          Our Strategy
+          </h1>
+          <br>
+          Quisque id elementum ante. Nam elit eros, finibus vel eros in, tempor porttitor dui. Aliquam pharetra viverra metus ut lobortis. Integer vulputate leo magna, vitae imperdiet dolor posuere eget. Duis at tempus ipsum, id convallis ligula. Sed pretium, metus vitae maximus hendrerit, erat nisl hendrerit diam, ut consequat sem magna vitae quam.
+          <br>
+           Phasellus facilisis tortor non facilisis mattis. Integer egestas sed risus et mollis. Vestibulum lorem diam, consectetur id interdum eget, luctus lobortis felis. Fusce quis efficitur urna. Aliquam eleifend condimentum urna a vulputate.
+        </div>
+        <div id = "article" class = "imgcontainer">
+          <img src="images/stock2.jpg">
+        </div>
+    </div>
+</article>
+
+<div class = "home">
+  <a href="#header">
+  <i class="fa fa-home" aria-hidden="true"></i>
+</a>
+</div>
+
+</body>
+</html>
