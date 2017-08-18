@@ -4,37 +4,14 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  <!--  <link rel="stylesheet" href="bulma-0.5.0/css/bulma.css" type="text/css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto: 300" rel="stylesheet">
+    <link rel="stylesheet" href="whitestyle.css" type="text/css">
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="zenscroll-latest/zenscroll.js"></script>
+<script type="text/javascript" src="zenscroll-latest/zenscroll-min.js"></script>
+<script src="jquery-3.2.1.min.js"></script>
+<script>$(document).ready(function(){$("body").hide().fadeIn(1000);});</script>
 </head>
 
 
@@ -42,15 +19,15 @@ $(document).ready(function(){
 <body>
 <a name = "header"></a>
 <header>
-<div class = "gradient_container">
+<div class = "header_container" id = "header">
   <div class = "container">
-    <div class = "logo">
-      <img src = "images/logo.png">
-    </div>
     <div class = "navbar">
       <a href="#whatwedo">WHAT WE DO</a>
-     <a href="#news">PACKAGES</a>
-     <a href="#contact">CLIENTS</a>
+     <a href="#packages">PACKAGES</a>
+     <a href="#clients">CLIENTS</a>
+    </div>
+    <div class = "logo">
+      <img src = "images/logo.png">
     </div>
   </div>
 
@@ -63,7 +40,7 @@ $(document).ready(function(){
 
   <div class = "container">
   <div class = "CTA">
-    <a href="">
+    <a href="#packages">
     Get Started
   </a>
   </div>
@@ -71,20 +48,39 @@ $(document).ready(function(){
 </div>
 </header>
 
+
+<!-- Icons -->
+</article>
+  <div class = "flexbox" id = "icons">
+      <div class = "flexbox" id = "icon">
+        <i class="fa fa-pied-piper fa-5x fa-fw" aria-hidden="true"></i><br>
+        BUILD YOUR BRAND
+      </div>
+
+      <div class = "flexbox" id = "icon">
+      <i class="fa fa-line-chart fa-5x fa-fw" aria-hidden="true"></i><br>
+      TRACK YOUR GROWTH
+    </div>
+
+      <div class = "flexbox" id = "icon">
+      <i class="fa fa-telegram fa-5x fa-fw" aria-hidden="true"></i><br>
+      BOOST YOUR ADVERTISING
+      </div>
+  </div>
+  <article>
+<!-- Explainers -->
 <article>
-  <a name = "whatwedo"></a>
+
+  <a name = "whatwedo" id = "whatwedo"></a>
     <div id = "article" class = "flexbox">
         <div id = "article" class = "imgcontainer">
-          <img src="images/stock1.jpg">
+          <img src="images/handshake.png">
         </div>
         <div id = "article" class = "container">
           <h1>
-            What we do
+            WHAT WE DO
           </h1>
-          <br>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non semper justo, non aliquam tellus. Quisque tincidunt nibh vitae semper sodales. Ut non tincidunt nisi. In sit amet lectus cursus, consectetur dui in, dictum justo. Suspendisse eget risus lorem.
-          <br>
-           Vivamus eu odio ac urna finibus tincidunt sed eget quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam et sollicitudin lacus, eu venenatis lacus.
+        We are a small digital consulting company focused on helping small business develop a stronger brand  that resonates with their customer and helps drive business, and push their business through digital marketing and search engine optimization. As a small company, we work one-on-one with customers to make sure we get them exactly where they are trying to go. Everyone has a unique brand; we want to bring that out.
         </div>
     </div>
 </article>
@@ -94,18 +90,48 @@ $(document).ready(function(){
     <div id = "article" class = "flexbox">
         <div id = "article" class = "container">
           <h1>
-          Our Strategy
+          OUR STRATEGY
           </h1>
-          <br>
-          Quisque id elementum ante. Nam elit eros, finibus vel eros in, tempor porttitor dui. Aliquam pharetra viverra metus ut lobortis. Integer vulputate leo magna, vitae imperdiet dolor posuere eget. Duis at tempus ipsum, id convallis ligula. Sed pretium, metus vitae maximus hendrerit, erat nisl hendrerit diam, ut consequat sem magna vitae quam.
-          <br>
-           Phasellus facilisis tortor non facilisis mattis. Integer egestas sed risus et mollis. Vestibulum lorem diam, consectetur id interdum eget, luctus lobortis felis. Fusce quis efficitur urna. Aliquam eleifend condimentum urna a vulputate.
+          Our approach to branding development includes meeting with the client to learn about the specifics of their business, and then performing extensive research on their market in order to determine the core customer demographics and targets. We pair this with ongoing data analytics, search engine optomization, and social media marketing strategies to create the ultimate package for your business.
         </div>
         <div id = "article" class = "imgcontainer">
-          <img src="images/stock2.jpg">
+          <img src="images/paintbrush.png">
         </div>
     </div>
 </article>
+
+<!-- Packages -->
+<article>
+  <a name = "packages"></a>
+      <div id = "packages" class = "flexbox">
+          <div id = "package" class = "flexbox">
+            <div id = "flexchild"><b>BRANDING<br></b></div>
+            <div id = "flexchild">
+              <p style = "font-size: .5em">Design and development of website and branding elements including logo, color scheme, and other visual elements </p>
+            </div>
+              <div id = "flexchild">Starting at <h2>$299</h2></div>
+            <div id = "flexchild"><a>Request a Quote</a></div>
+          </div>
+          <div id = "package" class = "flexbox">
+            <div id = "flexchild"><b>DIGITAL MARKETING</b></div>
+            <div id = "flexchild">
+                  <p style = "font-size: .5em">Search engine optimization and social media marketing catered to your target market</p>
+              </div>
+              <div id = "flexchild">Starting at <h2>$199</h2></div>
+          <div id = "flexchild"><a>Request a Quote</a></div>
+          </div>
+          <div id = "package" class = "flexbox">
+            <div id = "flexchild"><b>ANALYTICS<br></b></div>
+            <div id = "flexchild">
+                  <p style = "font-size: .5em">Ongoing data collection and analytics on branding and marketing performance</p>
+            </div>
+            <div id = "flexchild">Starting at <h2>$19/mo</h2></div>
+              <div id = "flexchild"><a>Request a Quote</a></div>
+          </div>
+      </div>
+</article>
+
+
 
 <div class = "home">
   <a href="#header">
